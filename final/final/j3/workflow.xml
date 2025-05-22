@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="cancel-reason-workflow">
+
+    <global>
+        <job-tracker>${jobTracker}</job-tracker>
+        <name-node>${nameNode}</name-node>
+    </global>
+
+    <start to="cancel-reason-job"/>
+
+    <action name="cancel-reason-job">
+        <map-reduce>
+            <configuration>
+
+                <!-- queue -->
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+
+                <!-- old-API mapper & reducer -->
+                <property>
+                    <name>mapred.mapper.class</name>
+                    <value>CancelMapper</value>
+                </property>
+                <property>
+                    <name>mapred.reducer.class</name>
+                    <value>CancelReducer</value>
+                </property>
+
+                <!-- input / output paths -->
+                <property>
+                    <name>mapred.input.dir</name>
+                    <value>${inputDir}</value>
+                </property>
+                <property>
+                    <name>mapred.output.dir</name>
+                    <value>${outputDir}</value>
+                </property>
+
+                <!-- custom limit -->
+                <property>
+                    <name>file.limit</name>
+                    <value>${numYears}</value>
+                </property>
+
+                <!-- key/value & format classes -->
+                <property>
+                    <name>mapred.output.key.class</name>
+                    <value>org.apache.hadoop.io.Text</value>
+                </property>
+                <property>
+                    <name>mapred.output.value.class</name>
+                    <value>org.apache.hadoop.io.IntWritable</value>
+                </property>
+                <property>
+                    <name>mapred.input.format.class</name>
+                    <value>org.apache.hadoop.mapred.TextInputFormat</value>
+                </property>
+                <property>
+                    <name>mapred.output.format.class</name>
+                    <value>org.apache.hadoop.mapred.TextOutputFormat</value>
+                </property>
+            </configuration>
+
+            <!-- ship the JAR -->
+            <file>${nameNode}/user/ubuntu/workflows/final/j3/lib/CancelJob.jar#CancelJob.jar</file>
+        </map-reduce>
+
+        <ok to="success"/>
+        <error to="fail"/>
+    </action>
+
+    <kill name="fail">
+        <message>MapReduce job failed: [${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+
+    <end name="success"/>
+</workflow-app>

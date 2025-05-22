@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="airline-analytics-workflow">
+    
+    <global>
+        <job-tracker>${jobTracker}</job-tracker>
+        <name-node>${nameNode}</name-node>
+    </global>
+
+    <start to="punctuality-job"/>
+
+    <!-- First job: Punctuality Workflow -->
+    <action name="punctuality-job">
+        <sub-workflow>
+            <app-path>${nameNode}/user/ubuntu/workflows/final/j1/workflow.xml</app-path>
+            <propagate-configuration/>
+            <configuration>
+                <property>
+                    <name>inputDir</name>
+                    <value>${punctualityInputDir}</value>
+                </property>
+                <property>
+                    <name>outputDir</name>
+                    <value>${punctualityOutputDir}</value>
+                </property>
+                <property>
+                    <name>numYears</name>
+                    <value>${numYears}</value>
+                </property>
+                <property>
+                    <name>queueName</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+        </sub-workflow>
+        <ok to="taxi-time-job"/>
+        <error to="fail"/>
+    </action>
+
+    <!-- Second job: Taxi Time Calculator Workflow -->
+    <action name="taxi-time-job">
+        <sub-workflow>
+            <app-path>${nameNode}/user/ubuntu/workflows/final/j2/workflow.xml</app-path>
+            <propagate-configuration/>
+            <configuration>
+                <property>
+                    <name>inputDir</name>
+                    <value>${taxiTimeInputDir}</value>
+                </property>
+                <property>
+                    <name>outputDir</name>
+                    <value>${taxiTimeOutputDir}</value>
+                </property>
+                <property>
+                    <name>numYears</name>
+                    <value>${numYears}</value>
+                </property>
+                <property>
+                    <name>queueName</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+        </sub-workflow>
+        <ok to="cancel-reason-job"/>
+        <error to="fail"/>
+    </action>
+
+    <!-- Third job: Cancel Reason Workflow -->
+    <action name="cancel-reason-job">
+        <sub-workflow>
+            <app-path>${nameNode}/user/ubuntu/workflows/final/j3/workflow.xml</app-path>
+            <propagate-configuration/>
+            <configuration>
+                <property>
+                    <name>inputDir</name>
+                    <value>${cancelInputDir}</value>
+                </property>
+                <property>
+                    <name>outputDir</name>
+                    <value>${cancelOutputDir}</value>
+                </property>
+<!--new changes -->
+ 	         <property>
+                    <name>numYears</name>
+                    <value>${numYears}</value>
+                </property>
+                <property>
+                    <name>queueName</name>
+                    <value>${queueName}</value>
+                </property>
+
+            </configuration>
+        </sub-workflow>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+
+    <kill name="fail">
+        <message>Workflow failed at action: [${wf:lastErrorNode()}] with error: [${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+
+    <end name="end"/>
+</workflow-app>

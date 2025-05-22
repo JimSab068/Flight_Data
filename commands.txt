@@ -1,0 +1,174 @@
+Run times:
+
+1 26.1
+2 24.24
+3 24.56
+4 25.59
+5 25.29
+6 25.40
+7 25.59
+
+
+1 2.34
+2 3.04
+3 3.34
+4 4.35
+5 5.36
+6 6.38
+7 7.07
+8 8.09
+9 9.10
+10 10.12
+11 11.44
+12 12.45
+13 14.15
+14 15.15
+15 16.17
+16 17.18
+17 38.37
+18 07.40
+19 8.09
+20 8.38
+21 11.11
+22 15.12
+
+
+
+
+Commands
+
+hdfs dfs -mkdir /user/ubuntu/in
+
+hdfs dfs -mkdir /user/ubuntu/workflows/
+
+hdfs dfs -mkdir /user/ubuntu/workflows/final
+
+hdfs dfs -mkdifr /user/ubuntu/workflows/final/j1
+hdfs dfs -mkdifr /user/ubuntu/workflows/final/j1/lib
+
+hdfs dfs -mkdifr /user/ubuntu/workflows/final/j2
+hdfs dfs -mkdifr /user/ubuntu/workflows/final/j2/lib
+
+hdfs dfs -mkdifr /user/ubuntu/workflows/final/j3
+hdfs dfs -mkdifr /user/ubuntu/workflows/final/j3/lib
+
+hdfs dfs -mkdir /user/ubuntu/workflows/punctuality/
+hdfs dfs -mkdir /user/ubuntu/workflows/punctuality/lib
+
+hdfs dfs -mv workflow.xml /user/ubuntu/workflows/final/ (workflow of all the Jobs)
+
+hdfs dfs -mv workflow.xml /user/ubuntu/workflows/final/j1 (workflow of J1)
+hdfs dfs -mv airline-punctuality.jar  /user/ubuntu/workflows/final/j1/lib
+
+hdfs dfs -mv workflow.xml /user/ubuntu/workflows/punctuality (workflow for J1)
+hdfs dfs -mv airline-punctuality.jar  /user/ubuntu/workflows/punctuality/lib
+
+
+hdfs dfs -mv workflow.xml /user/ubuntu/workflows/final/j2 (workflow for J2)
+hdfs dfs -mv tax-time-calculator.jar  /user/ubuntu/workflows/final/j2/lib
+
+hdfs dfs -mv workflow.xml /user/ubuntu/workflows/final/j3 (workflow for J3)
+hdfs dfs -mv CancelJob.jar  /user/ubuntu/workflows/final/j3/lib
+
+
+To run each loop 
+
+add the .csv files to /user/ubuntu/in directory 
+
+hdfs dfs -mv 1987.csv /user/ubuntu/in
+
+Add job.properties, and run_oozie_job.sh  to oozie-4.1.0 folder
+cd oozie-4.1.0
+nano two.txt (create this text file )
+
+
+start-dfs.sh
+start-yarn.sh
+cd ~/hadoop-2.6.5
+sbin/mr-jobhistory-daemon.sh start historyserver
+cd ~/oozie-4.1.0
+bin/ooziedb.sh create -sqlfile oozie.sql -run
+bin/oozied.sh start
+
+in oozie-4.1.0 directory
+export OOZIE_URL=http://localhost:11000/oozie
+
+./run_oozie_job.sh <num of years>
+
+(run these before running oozie job again)
+sudo rm -rf /tmp/hadoop-*
+sudo rm -rf /tmp/logs/*
+sudo rm -rf /home/ubuntu/hadoop-2.6.5/logs/*
+sudo du -sh /home/ubuntu/hadoop-2.6.5/tmp/*
+sudo rm -rf /home/ubuntu/hadoop-2.6.5/tmp/*
+sudo apt-get clean
+
+
+hdfs dfs -rm -r /user/ubuntu/outj1
+hdfs dfs -rm -r /user/ubuntu/outj2
+hdfs dfs -rm -r /user/ubuntu/outj3
+
+add the next .csv file to the input directory (/user/ubuntu/in)
+
+
+How to add VMs:
+1. Passphrase-less SSH into a new VM
+
+cat ~/.ssh/id_rsa.pub
+(on master node)
+sudo vim /etc/hosts
+add the private address of slave along with the slave #
+
+after adding the key in the slave 
+try ssh slave#
+if it works then exit
+
+
+cd hadoop-2.6.5/etc/hadoop/
+vim slaves
+add slave#
+cd ~
+scp -r hadoop-2.6.5 slave#:~
+
+On slave node:
+sudo nano /etc/ssh/sshd_config
+uncomment 
+1,2,3
+sudo systemctl restart ssh
+
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+
+nano ~/.ssh/authorized_keys
+(copy paste the key from the master node)
+chmod 600 ~/.ssh/authorized_keys
+sudo vim /etc/hosts (add master along with its private address)
+
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk -y
+
+vim ~/.bash_profile
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+export HADOOP_HOME=/home/ubuntu/hadoop-2.6.5
+export PATH=$PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/sbin
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+
+export M2_HOME=/home/ubuntu/apache-maven-3.5.3
+export PATH=$PATH:$M2_HOME/bin
+
+
+export OOZIE_HOME=/home/ubuntu/oozie-4.1.0
+export OOZIE_CONFIG=$OOZIE_HOME/conf
+export CLASSPATH=$CLASSPATH:$OOZIE_HOME/bin
+source ~/.bash_profile
+
+
+ 
+
+
+

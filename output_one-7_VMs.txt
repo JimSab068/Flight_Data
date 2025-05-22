@@ -1,0 +1,552 @@
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ cat one.txt
+
+===========================================
+The final draft starts here
+
+===========================================
+
+JOB STARTED AT: 2025-04-25 18:00:08
+NUM_YEARS: 22, ONE VM
+===========================================
+
+Job submission response: job: 0000000-250425175859009-oozie-ubun-W
+Job ID: 0000000-250425175859009-oozie-ubun-W
+
+[2025-04-25 18:00:11] Current status: RUNNING
+[2025-04-25 18:00:41] Current status: RUNNING
+[2025-04-25 18:01:12] Current status: RUNNING
+[2025-04-25 18:01:42] Current status: RUNNING
+[2025-04-25 18:02:13] Current status: RUNNING
+[2025-04-25 18:02:43] Current status: RUNNING
+[2025-04-25 18:03:14] Current status: RUNNING
+[2025-04-25 18:03:44] Current status: RUNNING
+[2025-04-25 18:04:15] Current status: RUNNING
+[2025-04-25 18:04:46] Current status: RUNNING
+[2025-04-25 18:05:16] Current status: RUNNING
+[2025-04-25 18:05:47] Current status: RUNNING
+[2025-04-25 18:06:17] Current status: RUNNING
+[2025-04-25 18:06:48] Current status: RUNNING
+[2025-04-25 18:07:18] Current status: RUNNING
+[2025-04-25 18:07:49] Current status: RUNNING
+[2025-04-25 18:08:19] Current status: RUNNING
+[2025-04-25 18:08:50] Current status: RUNNING
+[2025-04-25 18:09:21] Current status: RUNNING
+[2025-04-25 18:09:51] Current status: RUNNING
+[2025-04-25 18:10:22] Current status: RUNNING
+[2025-04-25 18:10:53] Current status: RUNNING
+[2025-04-25 18:11:23] Current status: RUNNING
+[2025-04-25 18:11:54] Current status: RUNNING
+[2025-04-25 18:12:24] Current status: RUNNING
+[2025-04-25 18:12:55] Current status: RUNNING
+[2025-04-25 18:13:25] Current status: RUNNING
+[2025-04-25 18:13:56] Current status: RUNNING
+[2025-04-25 18:14:27] Current status: RUNNING
+[2025-04-25 18:14:57] Current status: RUNNING
+[2025-04-25 18:15:28] Current status: RUNNING
+[2025-04-25 18:15:58] Current status: RUNNING
+[2025-04-25 18:16:29] Current status: RUNNING
+[2025-04-25 18:16:59] Current status: RUNNING
+[2025-04-25 18:17:30] Current status: RUNNING
+[2025-04-25 18:18:01] Current status: RUNNING
+[2025-04-25 18:18:31] Current status: RUNNING
+[2025-04-25 18:19:02] Current status: RUNNING
+[2025-04-25 18:19:32] Current status: RUNNING
+[2025-04-25 18:20:03] Current status: RUNNING
+[2025-04-25 18:20:33] Current status: RUNNING
+[2025-04-25 18:21:03] Current status: RUNNING
+[2025-04-25 18:21:34] Current status: RUNNING
+[2025-04-25 18:22:05] Current status: RUNNING
+[2025-04-25 18:22:35] Current status: RUNNING
+[2025-04-25 18:23:06] Current status: RUNNING
+[2025-04-25 18:23:36] Current status: RUNNING
+[2025-04-25 18:24:07] Current status: RUNNING
+[2025-04-25 18:24:38] Current status: RUNNING
+[2025-04-25 18:25:08] Current status: RUNNING
+[2025-04-25 18:25:39] Current status: RUNNING
+[2025-04-25 18:26:09] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-25 18:26:09
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 22
+TOTAL EXECUTION TIME: 0h 26m 1s
+===========================================
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HA      | On-Time Probability: 0.9446017229607789
+Airline: AQ      | On-Time Probability: 0.8730533706382305
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: EV      | On-Time Probability: 0.6912508954301619
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: YV      | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA        1468.0
+MIN_PAIR:ABI-SJT        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:CKB       299.375
+TOP_LONGEST:2:LNY       52.27336
+TOP_LONGEST:3:MKK       49.921803
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:LAR      8.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:BFF      8.5
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A       289717
+
+===========================================
+JOB STARTED AT: 2025-04-25 21:06:14
+NUM_YEARS: 22   || TWO VMS
+===========================================
+
+Job submission response: job: 0000002-250425195259617-oozie-ubun-W
+Job ID: 0000002-250425195259617-oozie-ubun-W
+
+[2025-04-25 21:06:14] Current status: RUNNING
+[2025-04-25 21:06:45] Current status: RUNNING
+[2025-04-25 21:07:15] Current status: RUNNING
+[2025-04-25 21:07:46] Current status: RUNNING
+[2025-04-25 21:08:16] Current status: RUNNING
+[2025-04-25 21:08:47] Current status: RUNNING
+[2025-04-25 21:09:17] Current status: RUNNING
+[2025-04-25 21:09:48] Current status: RUNNING
+[2025-04-25 21:10:18] Current status: RUNNING
+[2025-04-25 21:10:49] Current status: RUNNING
+[2025-04-25 21:11:20] Current status: RUNNING
+[2025-04-25 21:11:50] Current status: RUNNING
+[2025-04-25 21:12:21] Current status: RUNNING
+[2025-04-25 21:12:51] Current status: RUNNING
+[2025-04-25 21:13:21] Current status: RUNNING
+[2025-04-25 21:13:52] Current status: RUNNING
+[2025-04-25 21:14:22] Current status: RUNNING
+[2025-04-25 21:14:53] Current status: RUNNING
+[2025-04-25 21:15:23] Current status: RUNNING
+[2025-04-25 21:15:54] Current status: RUNNING
+[2025-04-25 21:16:24] Current status: RUNNING
+[2025-04-25 21:16:55] Current status: RUNNING
+[2025-04-25 21:17:25] Current status: RUNNING
+[2025-04-25 21:17:56] Current status: RUNNING
+[2025-04-25 21:18:26] Current status: RUNNING
+[2025-04-25 21:18:57] Current status: RUNNING
+[2025-04-25 21:19:28] Current status: RUNNING
+[2025-04-25 21:19:58] Current status: RUNNING
+[2025-04-25 21:20:29] Current status: RUNNING
+[2025-04-25 21:20:59] Current status: RUNNING
+[2025-04-25 21:21:29] Current status: RUNNING
+[2025-04-25 21:22:00] Current status: RUNNING
+[2025-04-25 21:22:30] Current status: RUNNING
+[2025-04-25 21:23:01] Current status: RUNNING
+[2025-04-25 21:23:32] Current status: RUNNING
+[2025-04-25 21:24:02] Current status: RUNNING
+[2025-04-25 21:24:33] Current status: RUNNING
+[2025-04-25 21:25:03] Current status: RUNNING
+[2025-04-25 21:25:33] Current status: RUNNING
+[2025-04-25 21:26:04] Current status: RUNNING
+[2025-04-25 21:26:34] Current status: RUNNING
+[2025-04-25 21:27:05] Current status: RUNNING
+[2025-04-25 21:27:35] Current status: RUNNING
+[2025-04-25 21:28:06] Current status: RUNNING
+[2025-04-25 21:28:36] Current status: RUNNING
+[2025-04-25 21:29:07] Current status: RUNNING
+[2025-04-25 21:29:37] Current status: RUNNING
+[2025-04-25 21:30:08] Current status: RUNNING
+[2025-04-25 21:30:38] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-25 21:30:38
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 22
+TOTAL EXECUTION TIME: 0h 24m 24s
+===========================================
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HA      | On-Time Probability: 0.9446017229607789
+Airline: AQ      | On-Time Probability: 0.8730533706382305
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: EV      | On-Time Probability: 0.6912508954301619
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: YV      | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA        1468.0
+MIN_PAIR:ABI-SJT        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:CKB       299.375
+TOP_LONGEST:2:LNY       52.27336
+TOP_LONGEST:3:MKK       49.921803
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:LAR      8.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:BFF      8.5
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A       289717
+===========================================
+JOB STARTED AT: 2025-04-25 22:29:39
+NUM_YEARS: 22 || THREE VMs
+===========================================
+
+Job submission response: job: 0000000-250425222731181-oozie-ubun-W
+Job ID: 0000000-250425222731181-oozie-ubun-W
+
+[2025-04-25 22:29:41] Current status: RUNNING
+[2025-04-25 22:30:11] Current status: RUNNING
+[2025-04-25 22:30:42] Current status: RUNNING
+[2025-04-25 22:31:12] Current status: RUNNING
+[2025-04-25 22:31:43] Current status: RUNNING
+[2025-04-25 22:32:13] Current status: RUNNING
+[2025-04-25 22:32:44] Current status: RUNNING
+[2025-04-25 22:33:14] Current status: RUNNING
+[2025-04-25 22:33:45] Current status: RUNNING
+[2025-04-25 22:34:15] Current status: RUNNING
+[2025-04-25 22:34:46] Current status: RUNNING
+[2025-04-25 22:35:16] Current status: RUNNING
+[2025-04-25 22:35:47] Current status: RUNNING
+[2025-04-25 22:36:17] Current status: RUNNING
+[2025-04-25 22:36:48] Current status: RUNNING
+[2025-04-25 22:37:18] Current status: RUNNING
+[2025-04-25 22:37:49] Current status: RUNNING
+[2025-04-25 22:38:19] Current status: RUNNING
+[2025-04-25 22:38:50] Current status: RUNNING
+[2025-04-25 22:39:20] Current status: RUNNING
+[2025-04-25 22:39:51] Current status: RUNNING
+[2025-04-25 22:40:21] Current status: RUNNING
+[2025-04-25 22:40:52] Current status: RUNNING
+[2025-04-25 22:41:22] Current status: RUNNING
+[2025-04-25 22:41:53] Current status: RUNNING
+[2025-04-25 22:42:23] Current status: RUNNING
+[2025-04-25 22:42:54] Current status: RUNNING
+[2025-04-25 22:43:25] Current status: RUNNING
+[2025-04-25 22:43:55] Current status: RUNNING
+[2025-04-25 22:44:26] Current status: RUNNING
+[2025-04-25 22:44:56] Current status: RUNNING
+[2025-04-25 22:45:27] Current status: RUNNING
+[2025-04-25 22:45:57] Current status: RUNNING
+[2025-04-25 22:46:28] Current status: RUNNING
+[2025-04-25 22:46:58] Current status: RUNNING
+[2025-04-25 22:47:29] Current status: RUNNING
+[2025-04-25 22:47:59] Current status: RUNNING
+[2025-04-25 22:48:29] Current status: RUNNING
+[2025-04-25 22:49:00] Current status: RUNNING
+[2025-04-25 22:49:30] Current status: RUNNING
+[2025-04-25 22:50:01] Current status: RUNNING
+[2025-04-25 22:50:31] Current status: RUNNING
+[2025-04-25 22:51:02] Current status: RUNNING
+[2025-04-25 22:51:32] Current status: RUNNING
+[2025-04-25 22:52:03] Current status: RUNNING
+[2025-04-25 22:52:34] Current status: RUNNING
+[2025-04-25 22:53:04] Current status: RUNNING
+[2025-04-25 22:53:35] Current status: RUNNING
+[2025-04-25 22:54:05] Current status: RUNNING
+[2025-04-25 22:54:35] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-25 22:54:35
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 22
+TOTAL EXECUTION TIME: 0h 24m 56s
+===========================================
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HA      | On-Time Probability: 0.9446017229607789
+Airline: AQ      | On-Time Probability: 0.8730533706382305
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: EV      | On-Time Probability: 0.6912508954301619
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: YV      | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA        1468.0
+MIN_PAIR:ABI-SJT        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:CKB       299.375
+TOP_LONGEST:2:LNY       52.27336
+TOP_LONGEST:3:MKK       49.921803
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:LAR      8.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:BFF      8.5
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A       289717
+
+
+===========================================
+JOB STARTED AT: 2025-04-25 23:58:09
+NUM_YEARS: 22 || FOUR VMs
+===========================================
+
+Job submission response: job: 0000000-250425235535811-oozie-ubun-W
+Job ID: 0000000-250425235535811-oozie-ubun-W
+
+[2025-04-25 23:58:11] Current status: RUNNING
+[2025-04-25 23:58:42] Current status: RUNNING
+[2025-04-25 23:59:12] Current status: RUNNING
+[2025-04-25 23:59:43] Current status: RUNNING
+[2025-04-26 00:00:13] Current status: RUNNING
+[2025-04-26 00:00:44] Current status: RUNNING
+[2025-04-26 00:01:14] Current status: RUNNING
+[2025-04-26 00:01:45] Current status: RUNNING
+[2025-04-26 00:02:15] Current status: RUNNING
+[2025-04-26 00:02:46] Current status: RUNNING
+[2025-04-26 00:03:16] Current status: RUNNING
+[2025-04-26 00:03:47] Current status: RUNNING
+[2025-04-26 00:04:18] Current status: RUNNING
+[2025-04-26 00:04:48] Current status: RUNNING
+[2025-04-26 00:05:19] Current status: RUNNING
+[2025-04-26 00:05:49] Current status: RUNNING
+[2025-04-26 00:06:19] Current status: RUNNING
+[2025-04-26 00:06:50] Current status: RUNNING
+[2025-04-26 00:07:21] Current status: RUNNING
+[2025-04-26 00:07:51] Current status: RUNNING
+[2025-04-26 00:08:22] Current status: RUNNING
+[2025-04-26 00:08:52] Current status: RUNNING
+[2025-04-26 00:09:23] Current status: RUNNING
+[2025-04-26 00:09:53] Current status: RUNNING
+[2025-04-26 00:10:24] Current status: RUNNING
+[2025-04-26 00:10:55] Current status: RUNNING
+[2025-04-26 00:11:25] Current status: RUNNING
+[2025-04-26 00:11:56] Current status: RUNNING
+[2025-04-26 00:12:26] Current status: RUNNING
+[2025-04-26 00:12:57] Current status: RUNNING
+[2025-04-26 00:13:27] Current status: RUNNING
+[2025-04-26 00:13:58] Current status: RUNNING
+[2025-04-26 00:14:28] Current status: RUNNING
+[2025-04-26 00:14:59] Current status: RUNNING
+[2025-04-26 00:15:30] Current status: RUNNING
+[2025-04-26 00:16:01] Current status: RUNNING
+[2025-04-26 00:16:31] Current status: RUNNING
+[2025-04-26 00:17:02] Current status: RUNNING
+[2025-04-26 00:17:32] Current status: RUNNING
+[2025-04-26 00:18:02] Current status: RUNNING
+[2025-04-26 00:18:33] Current status: RUNNING
+[2025-04-26 00:19:03] Current status: RUNNING
+[2025-04-26 00:19:34] Current status: RUNNING
+[2025-04-26 00:20:04] Current status: RUNNING
+[2025-04-26 00:20:35] Current status: RUNNING
+[2025-04-26 00:21:05] Current status: RUNNING
+[2025-04-26 00:21:36] Current status: RUNNING
+[2025-04-26 00:22:06] Current status: RUNNING
+[2025-04-26 00:22:37] Current status: RUNNING
+[2025-04-26 00:23:08] Current status: RUNNING
+[2025-04-26 00:23:38] Current status: RUNNING
+[2025-04-26 00:24:08] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 00:24:08
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 22
+TOTAL EXECUTION TIME: 0h 25m 59s
+===========================================
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HA      | On-Time Probability: 0.9446017229607789
+Airline: AQ      | On-Time Probability: 0.8730533706382305
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: EV      | On-Time Probability: 0.6912508954301619
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: YV      | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA        1468.0
+MIN_PAIR:ABI-SJT        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:CKB       299.375
+TOP_LONGEST:2:LNY       52.27336
+TOP_LONGEST:3:MKK       49.921803
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:LAR      8.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:BFF      8.5
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A       289717
+
+===========================================
+JOB STARTED AT: 2025-04-26 01:04:14
+NUM_YEARS: 22 || 5 VMs
+===========================================
+
+Job submission response: job: 0000000-250426010227913-oozie-ubun-W
+Job ID: 0000000-250426010227913-oozie-ubun-W
+
+[2025-04-26 01:04:16] Current status: RUNNING
+[2025-04-26 01:04:47] Current status: RUNNING
+[2025-04-26 01:05:17] Current status: RUNNING
+[2025-04-26 01:05:48] Current status: RUNNING
+[2025-04-26 01:06:18] Current status: RUNNING
+[2025-04-26 01:06:49] Current status: RUNNING
+[2025-04-26 01:07:20] Current status: RUNNING
+[2025-04-26 01:07:50] Current status: RUNNING
+[2025-04-26 01:08:21] Current status: RUNNING
+[2025-04-26 01:08:51] Current status: RUNNING
+[2025-04-26 01:09:22] Current status: RUNNING
+[2025-04-26 01:09:53] Current status: RUNNING
+[2025-04-26 01:10:23] Current status: RUNNING
+[2025-04-26 01:10:54] Current status: RUNNING
+[2025-04-26 01:11:24] Current status: RUNNING
+[2025-04-26 01:11:54] Current status: RUNNING
+[2025-04-26 01:12:25] Current status: RUNNING
+[2025-04-26 01:12:56] Current status: RUNNING
+[2025-04-26 01:13:26] Current status: RUNNING
+[2025-04-26 01:13:57] Current status: RUNNING
+[2025-04-26 01:14:27] Current status: RUNNING
+[2025-04-26 01:14:58] Current status: RUNNING
+[2025-04-26 01:15:29] Current status: RUNNING
+[2025-04-26 01:15:59] Current status: RUNNING
+[2025-04-26 01:16:30] Current status: RUNNING
+[2025-04-26 01:17:00] Current status: RUNNING
+[2025-04-26 01:17:31] Current status: RUNNING
+[2025-04-26 01:18:01] Current status: RUNNING
+[2025-04-26 01:18:32] Current status: RUNNING
+[2025-04-26 01:19:02] Current status: RUNNING
+[2025-04-26 01:19:33] Current status: RUNNING
+[2025-04-26 01:20:04] Current status: RUNNING
+[2025-04-26 01:20:34] Current status: RUNNING
+[2025-04-26 01:21:05] Current status: RUNNING
+[2025-04-26 01:21:35] Current status: RUNNING
+[2025-04-26 01:22:06] Current status: RUNNING
+[2025-04-26 01:22:37] Current status: RUNNING
+[2025-04-26 01:23:07] Current status: RUNNING
+[2025-04-26 01:23:37] Current status: RUNNING
+[2025-04-26 01:24:08] Current status: RUNNING
+[2025-04-26 01:24:38] Current status: RUNNING
+[2025-04-26 01:25:09] Current status: RUNNING
+[2025-04-26 01:25:39] Current status: RUNNING
+[2025-04-26 01:26:10] Current status: RUNNING
+[2025-04-26 01:26:40] Current status: RUNNING
+[2025-04-26 01:27:11] Current status: RUNNING
+[2025-04-26 01:27:41] Current status: RUNNING
+[2025-04-26 01:28:12] Current status: RUNNING
+[2025-04-26 01:28:42] Current status: RUNNING
+[2025-04-26 01:29:13] Current status: RUNNING
+[2025-04-26 01:29:43] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 01:29:43
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 22
+TOTAL EXECUTION TIME: 0h 25m 29s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HA      | On-Time Probability: 0.9446017229607789
+Airline: AQ      | On-Time Probability: 0.8730533706382305
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: EV      | On-Time Probability: 0.6912508954301619
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: YV      | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA        1468.0
+MIN_PAIR:ABI-SJT        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:CKB       299.375
+TOP_LONGEST:2:LNY       52.27336
+TOP_LONGEST:3:MKK       49.921803
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:LAR      8.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:BFF      8.5
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A       289717
+===========================================
+JOB STARTED AT: 2025-04-26 03:01:31
+NUM_YEARS: 22 || SEVEN VMs
+===========================================
+
+Job submission response: job: 0000000-250426025900746-oozie-ubun-W
+Job ID: 0000000-250426025900746-oozie-ubun-W
+
+[2025-04-26 03:01:34] Current status: RUNNING
+[2025-04-26 03:02:04] Current status: RUNNING
+[2025-04-26 03:02:35] Current status: RUNNING
+[2025-04-26 03:03:05] Current status: RUNNING
+[2025-04-26 03:03:36] Current status: RUNNING
+[2025-04-26 03:04:06] Current status: RUNNING
+[2025-04-26 03:04:37] Current status: RUNNING
+[2025-04-26 03:05:07] Current status: RUNNING
+[2025-04-26 03:05:38] Current status: RUNNING
+[2025-04-26 03:06:08] Current status: RUNNING
+[2025-04-26 03:06:39] Current status: RUNNING
+[2025-04-26 03:07:09] Current status: RUNNING
+[2025-04-26 03:07:40] Current status: RUNNING
+[2025-04-26 03:08:11] Current status: RUNNING
+[2025-04-26 03:08:41] Current status: RUNNING
+[2025-04-26 03:09:11] Current status: RUNNING
+[2025-04-26 03:09:42] Current status: RUNNING
+[2025-04-26 03:10:13] Current status: RUNNING
+[2025-04-26 03:10:43] Current status: RUNNING
+[2025-04-26 03:11:14] Current status: RUNNING
+[2025-04-26 03:11:44] Current status: RUNNING
+[2025-04-26 03:12:15] Current status: RUNNING
+[2025-04-26 03:12:45] Current status: RUNNING
+[2025-04-26 03:13:16] Current status: RUNNING
+[2025-04-26 03:13:46] Current status: RUNNING
+[2025-04-26 03:14:17] Current status: RUNNING
+[2025-04-26 03:14:48] Current status: RUNNING
+[2025-04-26 03:15:18] Current status: RUNNING
+[2025-04-26 03:15:49] Current status: RUNNING
+[2025-04-26 03:16:19] Current status: RUNNING
+[2025-04-26 03:16:50] Current status: RUNNING
+[2025-04-26 03:17:20] Current status: RUNNING
+[2025-04-26 03:17:51] Current status: RUNNING
+[2025-04-26 03:18:21] Current status: RUNNING
+[2025-04-26 03:18:52] Current status: RUNNING
+[2025-04-26 03:19:22] Current status: RUNNING
+[2025-04-26 03:19:53] Current status: RUNNING
+[2025-04-26 03:20:23] Current status: RUNNING
+[2025-04-26 03:20:54] Current status: RUNNING
+[2025-04-26 03:21:24] Current status: RUNNING
+[2025-04-26 03:21:54] Current status: RUNNING
+[2025-04-26 03:22:25] Current status: RUNNING
+[2025-04-26 03:22:56] Current status: RUNNING
+[2025-04-26 03:23:26] Current status: RUNNING
+[2025-04-26 03:23:57] Current status: RUNNING
+[2025-04-26 03:24:27] Current status: RUNNING
+[2025-04-26 03:24:58] Current status: RUNNING
+[2025-04-26 03:25:28] Current status: RUNNING
+[2025-04-26 03:25:59] Current status: RUNNING
+[2025-04-26 03:26:29] Current status: RUNNING
+[2025-04-26 03:27:00] Current status: RUNNING
+[2025-04-26 03:27:30] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 03:27:30
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 22
+TOTAL EXECUTION TIME: 0h 25m 59s
+===========================================
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HA      | On-Time Probability: 0.9446017229607789
+Airline: AQ      | On-Time Probability: 0.8730533706382305
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: EV      | On-Time Probability: 0.6912508954301619
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: YV      | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA        1468.0
+MIN_PAIR:ABI-SJT        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:CKB       299.375
+TOP_LONGEST:2:LNY       52.27336
+TOP_LONGEST:3:MKK       49.921803
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:LAR      8.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:BFF      8.5
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A       289717
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$
+
+

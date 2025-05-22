@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="taxi-time-calculator-workflow">
+
+    <global>
+        <job-tracker>${jobTracker}</job-tracker>
+        <name-node>${nameNode}</name-node>
+    </global>
+
+    <start to="taxi-time-calculator"/>
+
+    <action name="taxi-time-calculator">
+        <map-reduce>
+            <configuration>
+                <!-- Job configuration -->
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+                <property>
+                    <name>mapred.mapper.class</name>
+                    <value>TaxiTimeCalculator$TaxiMapper</value>
+                </property>
+                <property>
+                    <name>mapred.reducer.class</name>
+                    <value>TaxiTimeCalculator$TaxiReducer</value>
+                </property>
+                <property>
+                    <name>mapred.input.dir</name>
+                    <value>${inputDir}</value>
+                </property>
+                <property>
+                    <name>mapred.output.dir</name>
+                    <value>${outputDir}</value>
+                </property>
+                <property>
+                    <name>num.years</name>
+                    <value>${numYears}</value>
+                </property>
+                <property>
+                    <name>mapred.output.key.class</name>
+                    <value>org.apache.hadoop.io.Text</value>
+                </property>
+                <property>
+                    <name>mapred.output.value.class</name>
+                    <value>org.apache.hadoop.io.FloatWritable</value>
+                </property>
+                <property>
+                    <name>mapred.input.format.class</name>
+                    <value>org.apache.hadoop.mapred.TextInputFormat</value>
+                </property>
+                <property>
+                    <name>mapred.output.format.class</name>
+                    <value>org.apache.hadoop.mapred.TextOutputFormat</value>
+                </property>
+            </configuration>
+        </map-reduce>
+        <ok to="success"/>
+        <error to="fail"/>
+    </action>
+
+    <kill name="fail">
+        <message>MapReduce job failed: [${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+
+    <end name="success"/>
+
+</workflow-app>

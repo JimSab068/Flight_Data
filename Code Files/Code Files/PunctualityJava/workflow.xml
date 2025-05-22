@@ -1,0 +1,73 @@
+<workflow-app xmlns="uri:oozie:workflow:0.5" name="punctuality-workflow">
+    <global>
+        <job-tracker>${jobTracker}</job-tracker>
+        <name-node>${nameNode}</name-node>
+    </global>
+
+    <start to="punctuality-mr"/>
+
+    <action name="punctuality-mr">
+        <map-reduce>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <prepare>
+                <delete path="${outputDir}"/>
+            </prepare>
+
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+
+                <!-- Use consistent API settings - all "old" API -->
+                <property>
+                    <name>mapred.mapper.class</name>
+                    <value>PunctualityMapper</value>
+                </property>
+                <property>
+                    <name>mapred.reducer.class</name>
+                    <value>PunctualityReducer</value>
+                </property>
+                <property>
+                    <name>mapred.output.key.class</name>
+                    <value>org.apache.hadoop.io.Text</value>
+                </property>
+                <property>
+                    <name>mapred.output.value.class</name>
+                    <value>org.apache.hadoop.io.IntWritable</value>
+                </property>
+
+                <!-- Input/Output paths -->
+                <property>
+                    <name>mapred.input.dir</name>
+                    <value>${inputDir}</value>
+                </property>
+                <property>
+                    <name>mapred.output.dir</name>
+                    <value>${outputDir}</value>
+                </property>
+
+                <!-- JAR file location -->
+                <property>
+                    <name>mapred.jar</name>
+                    <value>${nameNode}/user/ubuntu/workflows/punctuality/lib/airline-punctuality.jar</value>
+                </property>
+
+                <!-- Number of years parameter -->
+                <property>
+                    <name>num.years</name>
+                    <value>${numYears}</value>
+                </property>
+            </configuration>
+        </map-reduce>
+        <ok to="end"/>
+        <error to="fail"/>
+    </action>
+
+    <kill name="fail">
+        <message>MapReduce job failed: [${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+
+    <end name="end"/>
+</workflow-app>

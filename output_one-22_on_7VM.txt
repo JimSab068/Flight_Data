@@ -1,0 +1,1257 @@
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ cat two.txt
+===========================================
+JOB STARTED AT: 2025-04-26 16:44:18
+NUM_YEARS: 1
+===========================================
+
+Job submission response: job: 0000000-250426164311869-oozie-ubun-W
+Job ID: 0000000-250426164311869-oozie-ubun-W
+
+[2025-04-26 16:44:20] Current status: RUNNING
+[2025-04-26 16:44:51] Current status: RUNNING
+[2025-04-26 16:45:21] Current status: RUNNING
+[2025-04-26 16:45:52] Current status: RUNNING
+[2025-04-26 16:46:22] Current status: RUNNING
+[2025-04-26 16:46:52] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 16:46:52
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 1
+TOTAL EXECUTION TIME: 0h 2m 34s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8601229952972387
+Airline: AA      | On-Time Probability: 0.8289951889191922
+Airline: HP      | On-Time Probability: 0.8013730691215478
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PS      | On-Time Probability: 0.6755088544345653
+Airline: WN      | On-Time Probability: 0.7345950704225352
+Airline: PI      | On-Time Probability: 0.7449350559204533
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1987      19685
+
+
+===========================================
+JOB STARTED AT: 2025-04-26 16:53:08
+NUM_YEARS: 2
+===========================================
+
+Job submission response: job: 0000004-250426164311869-oozie-ubun-W
+Job ID: 0000004-250426164311869-oozie-ubun-W
+
+[2025-04-26 16:53:09] Current status: RUNNING
+[2025-04-26 16:53:40] Current status: RUNNING
+[2025-04-26 16:54:10] Current status: RUNNING
+[2025-04-26 16:54:41] Current status: RUNNING
+[2025-04-26 16:55:11] Current status: RUNNING
+[2025-04-26 16:55:42] Current status: RUNNING
+[2025-04-26 16:56:12] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 16:56:12
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 2
+TOTAL EXECUTION TIME: 0h 3m 4s
+===========================================
+-rw-r--r--   3 ubuntu supergroup        432 2025-04-26 16:53 /user/ubuntu/outj1/part-00000
+^[[Aubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HP      | On-Time Probability: 0.8467483237750322
+Airline: AA      | On-Time Probability: 0.8440828322434457
+Airline: DL      | On-Time Probability: 0.8396841214225251
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: US      | On-Time Probability: 0.7622799205316161
+Airline: PI      | On-Time Probability: 0.771251220149305
+Airline: PS      | On-Time Probability: 0.7733005117260446
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1988      50163
+
+===========================================
+JOB STARTED AT: 2025-04-26 17:00:11
+NUM_YEARS: 3
+===========================================
+
+Job submission response: job: 0000008-250426164311869-oozie-ubun-W
+Job ID: 0000008-250426164311869-oozie-ubun-W
+
+[2025-04-26 17:00:12] Current status: RUNNING
+[2025-04-26 17:00:42] Current status: RUNNING
+[2025-04-26 17:01:13] Current status: RUNNING
+[2025-04-26 17:01:43] Current status: RUNNING
+[2025-04-26 17:02:14] Current status: RUNNING
+[2025-04-26 17:02:44] Current status: RUNNING
+[2025-04-26 17:03:15] Current status: RUNNING
+[2025-04-26 17:03:45] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 17:03:45
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 3
+TOTAL EXECUTION TIME: 0h 3m 34s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: AA      | On-Time Probability: 0.8366930973786171
+Airline: HP      | On-Time Probability: 0.8314119215787302
+Airline: DL      | On-Time Probability: 0.8259225811124832
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: US      | On-Time Probability: 0.7310494650323722
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: UA      | On-Time Probability: 0.763266704105751
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1989      74165
+
+===========================================
+JOB STARTED AT: 2025-04-26 17:06:08
+NUM_YEARS: 4
+===========================================
+
+Job submission response: job: 0000012-250426164311869-oozie-ubun-W
+Job ID: 0000012-250426164311869-oozie-ubun-W
+
+[2025-04-26 17:06:09] Current status: RUNNING
+[2025-04-26 17:06:39] Current status: RUNNING
+[2025-04-26 17:07:10] Current status: RUNNING
+[2025-04-26 17:07:40] Current status: RUNNING
+[2025-04-26 17:08:11] Current status: RUNNING
+[2025-04-26 17:08:42] Current status: RUNNING
+[2025-04-26 17:09:12] Current status: RUNNING
+[2025-04-26 17:09:42] Current status: RUNNING
+[2025-04-26 17:10:13] Current status: RUNNING
+[2025-04-26 17:10:43] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 17:10:43
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 4
+TOTAL EXECUTION TIME: 0h 4m 35s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8408190012141094
+Airline: AA      | On-Time Probability: 0.8388736899144893
+Airline: NW      | On-Time Probability: 0.8230549666599553
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: WN      | On-Time Probability: 0.7541502937180586
+Airline: US      | On-Time Probability: 0.7692816388047307
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1989      74165
+===========================================
+JOB STARTED AT: 2025-04-26 17:13:07
+NUM_YEARS: 5
+===========================================
+
+Job submission response: job: 0000016-250426164311869-oozie-ubun-W
+Job ID: 0000016-250426164311869-oozie-ubun-W
+
+[2025-04-26 17:13:08] Current status: RUNNING
+[2025-04-26 17:13:39] Current status: RUNNING
+[2025-04-26 17:14:09] Current status: RUNNING
+[2025-04-26 17:14:40] Current status: RUNNING
+[2025-04-26 17:15:10] Current status: RUNNING
+[2025-04-26 17:15:41] Current status: RUNNING
+[2025-04-26 17:16:11] Current status: RUNNING
+[2025-04-26 17:16:42] Current status: RUNNING
+[2025-04-26 17:17:12] Current status: RUNNING
+[2025-04-26 17:17:43] Current status: RUNNING
+[2025-04-26 17:18:13] Current status: RUNNING
+[2025-04-26 17:18:43] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 17:18:43
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 5
+TOTAL EXECUTION TIME: 0h 5m 36s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: AA      | On-Time Probability: 0.8502045061585951
+Airline: ML (1)  | On-Time Probability: 0.8412528868360277
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: WN      | On-Time Probability: 0.7623928550483522
+Airline: PS      | On-Time Probability: 0.7733005117260446
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1989      74165
+
+===========================================
+JOB STARTED AT: 2025-04-26 17:22:02
+NUM_YEARS: 6
+===========================================
+
+Job submission response: job: 0000020-250426164311869-oozie-ubun-W
+Job ID: 0000020-250426164311869-oozie-ubun-W
+
+[2025-04-26 17:22:03] Current status: RUNNING
+[2025-04-26 17:22:34] Current status: RUNNING
+[2025-04-26 17:23:04] Current status: RUNNING
+[2025-04-26 17:23:35] Current status: RUNNING
+[2025-04-26 17:24:05] Current status: RUNNING
+[2025-04-26 17:24:36] Current status: RUNNING
+[2025-04-26 17:25:06] Current status: RUNNING
+[2025-04-26 17:25:37] Current status: RUNNING
+[2025-04-26 17:26:07] Current status: RUNNING
+[2025-04-26 17:26:38] Current status: RUNNING
+[2025-04-26 17:27:08] Current status: RUNNING
+[2025-04-26 17:27:39] Current status: RUNNING
+[2025-04-26 17:28:09] Current status: RUNNING
+[2025-04-26 17:28:40] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 17:28:40
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 6
+TOTAL EXECUTION TIME: 0h 6m 38s
+===========================================
+Job execution completed. Results saved to /home/ubuntu/oozie-4.1.0/two.txt
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: AA      | On-Time Probability: 0.8541745521530364
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: NW      | On-Time Probability: 0.8472018752450979
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: PS      | On-Time Probability: 0.7733005117260446
+Airline: WN      | On-Time Probability: 0.7867998255550244
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1989      74165
+===========================================
+JOB STARTED AT: 2025-04-26 17:31:59
+NUM_YEARS: 7
+===========================================
+
+Job submission response: job: 0000024-250426164311869-oozie-ubun-W
+Job ID: 0000024-250426164311869-oozie-ubun-W
+
+[2025-04-26 17:32:00] Current status: RUNNING
+[2025-04-26 17:32:30] Current status: RUNNING
+[2025-04-26 17:33:01] Current status: RUNNING
+[2025-04-26 17:33:31] Current status: RUNNING
+[2025-04-26 17:34:02] Current status: RUNNING
+[2025-04-26 17:34:32] Current status: RUNNING
+[2025-04-26 17:35:03] Current status: RUNNING
+[2025-04-26 17:35:33] Current status: RUNNING
+[2025-04-26 17:36:04] Current status: RUNNING
+[2025-04-26 17:36:34] Current status: RUNNING
+[2025-04-26 17:37:05] Current status: RUNNING
+[2025-04-26 17:37:35] Current status: RUNNING
+[2025-04-26 17:38:06] Current status: RUNNING
+[2025-04-26 17:38:36] Current status: RUNNING
+[2025-04-26 17:39:06] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 17:39:06
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 7
+TOTAL EXECUTION TIME: 0h 7m 7s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: AA      | On-Time Probability: 0.855078783963641
+Airline: NW      | On-Time Probability: 0.8542522063543145
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: PS      | On-Time Probability: 0.7733005117260446
+Airline: WN      | On-Time Probability: 0.7964219877885959
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1989      74165
+
+===========================================
+JOB STARTED AT: 2025-04-26 17:41:44
+NUM_YEARS: 8
+===========================================
+
+Job submission response: job: 0000028-250426164311869-oozie-ubun-W
+Job ID: 0000028-250426164311869-oozie-ubun-W
+
+[2025-04-26 17:41:45] Current status: RUNNING
+[2025-04-26 17:42:16] Current status: RUNNING
+[2025-04-26 17:42:46] Current status: RUNNING
+[2025-04-26 17:43:17] Current status: RUNNING
+[2025-04-26 17:43:47] Current status: RUNNING
+[2025-04-26 17:44:18] Current status: RUNNING
+[2025-04-26 17:44:48] Current status: RUNNING
+[2025-04-26 17:45:19] Current status: RUNNING
+[2025-04-26 17:45:49] Current status: RUNNING
+[2025-04-26 17:46:20] Current status: RUNNING
+[2025-04-26 17:46:51] Current status: RUNNING
+[2025-04-26 17:47:21] Current status: RUNNING
+[2025-04-26 17:47:51] Current status: RUNNING
+[2025-04-26 17:48:22] Current status: RUNNING
+[2025-04-26 17:48:52] Current status: RUNNING
+[2025-04-26 17:49:23] Current status: RUNNING
+[2025-04-26 17:49:53] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 17:49:53
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 8
+TOTAL EXECUTION TIME: 0h 8m 9s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: NW      | On-Time Probability: 0.8575625267313206
+Airline: AA      | On-Time Probability: 0.8554506492610068
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: PS      | On-Time Probability: 0.7733005117260446
+Airline: US      | On-Time Probability: 0.7927225596475627
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1989      74165
+
+===========================================
+JOB STARTED AT: 2025-04-26 17:53:45
+NUM_YEARS: 9
+===========================================
+
+Job submission response: job: 0000032-250426164311869-oozie-ubun-W
+Job ID: 0000032-250426164311869-oozie-ubun-W
+
+[2025-04-26 17:53:46] Current status: RUNNING
+[2025-04-26 17:54:17] Current status: RUNNING
+[2025-04-26 17:54:47] Current status: RUNNING
+[2025-04-26 17:55:18] Current status: RUNNING
+[2025-04-26 17:55:48] Current status: RUNNING
+[2025-04-26 17:56:19] Current status: RUNNING
+[2025-04-26 17:56:49] Current status: RUNNING
+[2025-04-26 17:57:20] Current status: RUNNING
+[2025-04-26 17:57:50] Current status: RUNNING
+[2025-04-26 17:58:21] Current status: RUNNING
+[2025-04-26 17:58:51] Current status: RUNNING
+[2025-04-26 17:59:22] Current status: RUNNING
+[2025-04-26 17:59:52] Current status: RUNNING
+[2025-04-26 18:00:22] Current status: RUNNING
+[2025-04-26 18:00:53] Current status: RUNNING
+[2025-04-26 18:01:23] Current status: RUNNING
+[2025-04-26 18:01:54] Current status: RUNNING
+[2025-04-26 18:02:24] Current status: RUNNING
+[2025-04-26 18:02:55] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 18:02:55
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 9
+TOTAL EXECUTION TIME: 0h 9m 10s
+===========================================
+Job execution completed. Results saved to /home/ubuntu/oozie-4.1.0/two.txt
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: NW      | On-Time Probability: 0.854818460525978
+Airline: AA      | On-Time Probability: 0.8521190905560923
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: PS      | On-Time Probability: 0.7733005117260446
+Airline: WN      | On-Time Probability: 0.7883762005148002
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:EWR-HDN        38.2
+MIN_PAIR:HRL-SHV        5.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:JFK       27.760262
+TOP_LONGEST:2:DRO       27.62745
+TOP_LONGEST:3:GUC       26.51575
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:KSM      8.616541
+TOP_SHORTEST:2:WRG      9.213242
+TOP_SHORTEST:3:LBB      9.86651
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1995      91905
+===========================================
+
+===========================================
+JOB STARTED AT: 2025-04-26 18:49:46
+NUM_YEARS: 10
+===========================================
+
+Job submission response: job: 0000000-250426184541721-oozie-ubun-W
+Job ID: 0000000-250426184541721-oozie-ubun-W
+
+[2025-04-26 18:49:48] Current status: RUNNING
+[2025-04-26 18:50:18] Current status: RUNNING
+[2025-04-26 18:50:49] Current status: RUNNING
+[2025-04-26 18:51:19] Current status: RUNNING
+[2025-04-26 18:51:50] Current status: RUNNING
+[2025-04-26 18:52:20] Current status: RUNNING
+[2025-04-26 18:52:51] Current status: RUNNING
+[2025-04-26 18:53:21] Current status: RUNNING
+[2025-04-26 18:53:52] Current status: RUNNING
+[2025-04-26 18:54:22] Current status: RUNNING
+[2025-04-26 18:54:53] Current status: RUNNING
+[2025-04-26 18:55:23] Current status: RUNNING
+[2025-04-26 18:55:54] Current status: RUNNING
+[2025-04-26 18:56:25] Current status: RUNNING
+[2025-04-26 18:56:55] Current status: RUNNING
+[2025-04-26 18:57:25] Current status: RUNNING
+[2025-04-26 18:57:56] Current status: RUNNING
+[2025-04-26 18:58:27] Current status: RUNNING
+[2025-04-26 18:58:57] Current status: RUNNING
+[2025-04-26 18:59:27] Current status: RUNNING
+[2025-04-26 18:59:58] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 18:59:58
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 10
+TOTAL EXECUTION TIME: 0h 10m 12s
+===========================================
+
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: NW      | On-Time Probability: 0.8482265818210212
+Airline: AA      | On-Time Probability: 0.8452648543453141
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: PS      | On-Time Probability: 0.7733005117260446
+Airline: WN      | On-Time Probability: 0.7814242810156509
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:JFK-BWI        54.0
+MIN_PAIR:HRL-SHV        5.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:JFK       28.666119
+TOP_LONGEST:2:ACK       26.992308
+TOP_LONGEST:3:GUC       26.789364
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:ABI      6.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:WRG      9.417686
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1996      128536
+
+===========================================
+JOB STARTED AT: 2025-04-26 20:32:50
+NUM_YEARS: 12
+===========================================
+
+Job submission response: job: 0000000-250426203001441-oozie-ubun-W
+Job ID: 0000000-250426203001441-oozie-ubun-W
+
+[2025-04-26 20:32:52] Current status: RUNNING
+[2025-04-26 20:33:23] Current status: RUNNING
+[2025-04-26 20:33:53] Current status: RUNNING
+[2025-04-26 20:34:24] Current status: RUNNING
+[2025-04-26 20:34:54] Current status: RUNNING
+[2025-04-26 20:35:25] Current status: RUNNING
+[2025-04-26 20:35:55] Current status: RUNNING
+[2025-04-26 20:36:26] Current status: RUNNING
+[2025-04-26 20:36:56] Current status: RUNNING
+[2025-04-26 20:37:27] Current status: RUNNING
+[2025-04-26 20:37:58] Current status: RUNNING
+[2025-04-26 20:38:28] Current status: RUNNING
+[2025-04-26 20:38:59] Current status: RUNNING
+[2025-04-26 20:39:29] Current status: RUNNING
+[2025-04-26 20:40:00] Current status: RUNNING
+[2025-04-26 20:40:30] Current status: RUNNING
+[2025-04-26 20:41:01] Current status: RUNNING
+[2025-04-26 20:41:32] Current status: RUNNING
+[2025-04-26 20:42:02] Current status: RUNNING
+[2025-04-26 20:42:32] Current status: RUNNING
+[2025-04-26 20:43:03] Current status: RUNNING
+[2025-04-26 20:43:33] Current status: RUNNING
+[2025-04-26 20:44:04] Current status: RUNNING
+[2025-04-26 20:44:34] Current status: RUNNING
+[2025-04-26 20:45:05] Current status: RUNNING
+[2025-04-26 20:45:35] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 20:45:35
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 12
+TOTAL EXECUTION TIME: 0h 12m 45s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: AA      | On-Time Probability: 0.8428103865649277
+Airline: ML (1)  | On-Time Probability: 0.8412528868360277
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: WN      | On-Time Probability: 0.7714506491275177
+Airline: PS      | On-Time Probability: 0.7733005117260446
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:JFK-BWI        54.0
+MIN_PAIR:HNL-GUM        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:ACK       29.611137
+TOP_LONGEST:2:JFK       29.177114
+TOP_LONGEST:3:EWR       27.447765
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:MKK      0.0
+TOP_SHORTEST:2:LNY      0.0
+TOP_SHORTEST:3:ABI      6.0
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1998      144509
+===========================================
+===========================================
+JOB STARTED AT: 2025-04-26 22:50:59
+NUM_YEARS: 11
+===========================================
+
+Job submission response: job: 0000000-250426225021547-oozie-ubun-W
+Job ID: 0000000-250426225021547-oozie-ubun-W
+
+[2025-04-26 22:51:01] Current status: RUNNING
+[2025-04-26 22:51:31] Current status: RUNNING
+[2025-04-26 22:52:02] Current status: RUNNING
+[2025-04-26 22:52:33] Current status: RUNNING
+[2025-04-26 22:53:03] Current status: RUNNING
+[2025-04-26 22:53:34] Current status: RUNNING
+[2025-04-26 22:54:04] Current status: RUNNING
+[2025-04-26 22:54:34] Current status: RUNNING
+[2025-04-26 22:55:05] Current status: RUNNING
+[2025-04-26 22:55:36] Current status: RUNNING
+[2025-04-26 22:56:06] Current status: RUNNING
+[2025-04-26 22:56:37] Current status: RUNNING
+[2025-04-26 22:57:07] Current status: RUNNING
+[2025-04-26 22:57:38] Current status: RUNNING
+[2025-04-26 22:58:08] Current status: RUNNING
+[2025-04-26 22:58:39] Current status: RUNNING
+[2025-04-26 22:59:10] Current status: RUNNING
+[2025-04-26 22:59:40] Current status: RUNNING
+[2025-04-26 23:00:11] Current status: RUNNING
+[2025-04-26 23:00:42] Current status: RUNNING
+[2025-04-26 23:01:12] Current status: RUNNING
+[2025-04-26 23:01:43] Current status: RUNNING
+[2025-04-26 23:02:13] Current status: RUNNING
+[2025-04-26 23:02:43] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 23:02:43
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 11
+TOTAL EXECUTION TIME: 0h 11m 44s
+===========================================
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: AA      | On-Time Probability: 0.8437837893928546
+Airline: ML (1)  | On-Time Probability: 0.8412528868360277
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: PS      | On-Time Probability: 0.7733005117260446
+Airline: WN      | On-Time Probability: 0.7769626162412595
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:JFK-BWI        54.0
+MIN_PAIR:HNL-GUM        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:JFK       28.830244
+TOP_LONGEST:2:ACK       28.38761
+TOP_LONGEST:3:EWR       26.766289
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:ABI      6.0
+TOP_SHORTEST:2:KSM      8.373096
+TOP_SHORTEST:3:WRG      9.270849
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1996      128536
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$
+
+===========================================
+JOB STARTED AT: 2025-04-26 23:42:18
+NUM_YEARS: 13
+===========================================
+
+Job submission response: job: 0000006-250426225021547-oozie-ubun-W
+Job ID: 0000006-250426225021547-oozie-ubun-W
+
+[2025-04-26 23:42:19] Current status: RUNNING
+[2025-04-26 23:42:49] Current status: RUNNING
+[2025-04-26 23:43:20] Current status: RUNNING
+[2025-04-26 23:43:50] Current status: RUNNING
+[2025-04-26 23:44:21] Current status: RUNNING
+[2025-04-26 23:44:51] Current status: RUNNING
+[2025-04-26 23:45:22] Current status: RUNNING
+[2025-04-26 23:45:53] Current status: RUNNING
+[2025-04-26 23:46:23] Current status: RUNNING
+[2025-04-26 23:46:53] Current status: RUNNING
+[2025-04-26 23:47:24] Current status: RUNNING
+[2025-04-26 23:47:54] Current status: RUNNING
+[2025-04-26 23:48:25] Current status: RUNNING
+[2025-04-26 23:48:55] Current status: RUNNING
+[2025-04-26 23:49:26] Current status: RUNNING
+[2025-04-26 23:49:56] Current status: RUNNING
+[2025-04-26 23:50:27] Current status: RUNNING
+[2025-04-26 23:50:58] Current status: RUNNING
+[2025-04-26 23:51:28] Current status: RUNNING
+[2025-04-26 23:51:59] Current status: RUNNING
+[2025-04-26 23:52:29] Current status: RUNNING
+[2025-04-26 23:52:59] Current status: RUNNING
+[2025-04-26 23:53:30] Current status: RUNNING
+[2025-04-26 23:54:00] Current status: RUNNING
+[2025-04-26 23:54:31] Current status: RUNNING
+[2025-04-26 23:55:01] Current status: RUNNING
+[2025-04-26 23:55:32] Current status: RUNNING
+[2025-04-26 23:56:02] Current status: RUNNING
+[2025-04-26 23:56:33] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-26 23:56:33
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 13
+TOTAL EXECUTION TIME: 0h 14m 15s
+===========================================
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: ML (1)  | On-Time Probability: 0.8412528868360277
+Airline: AA      | On-Time Probability: 0.8389373580482087
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: WN      | On-Time Probability: 0.7645778893624406
+Airline: PS      | On-Time Probability: 0.7733005117260446
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:JFK-BWI        54.0
+MIN_PAIR:HNL-GUM        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:ACK       29.611137
+TOP_LONGEST:2:JFK       29.49847
+TOP_LONGEST:3:EWR       28.080948
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:MKK      0.0
+TOP_SHORTEST:2:LNY      0.0
+TOP_SHORTEST:3:ABI      6.0
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 1999      154311
+===========================================
+JOB STARTED AT: 2025-04-27 00:11:18
+NUM_YEARS: 14
+===========================================
+
+Job submission response: job: 0000010-250426225021547-oozie-ubun-W
+Job ID: 0000010-250426225021547-oozie-ubun-W
+
+[2025-04-27 00:11:19] Current status: RUNNING
+[2025-04-27 00:11:49] Current status: RUNNING
+[2025-04-27 00:12:20] Current status: RUNNING
+[2025-04-27 00:12:50] Current status: RUNNING
+[2025-04-27 00:13:21] Current status: RUNNING
+[2025-04-27 00:13:51] Current status: RUNNING
+[2025-04-27 00:14:22] Current status: RUNNING
+[2025-04-27 00:14:52] Current status: RUNNING
+[2025-04-27 00:15:23] Current status: RUNNING
+[2025-04-27 00:15:53] Current status: RUNNING
+[2025-04-27 00:16:24] Current status: RUNNING
+[2025-04-27 00:16:54] Current status: RUNNING
+[2025-04-27 00:17:25] Current status: RUNNING
+[2025-04-27 00:17:55] Current status: RUNNING
+[2025-04-27 00:18:26] Current status: RUNNING
+[2025-04-27 00:18:56] Current status: RUNNING
+[2025-04-27 00:19:27] Current status: RUNNING
+[2025-04-27 00:19:57] Current status: RUNNING
+[2025-04-27 00:20:28] Current status: RUNNING
+[2025-04-27 00:20:58] Current status: RUNNING
+[2025-04-27 00:21:29] Current status: RUNNING
+[2025-04-27 00:21:59] Current status: RUNNING
+[2025-04-27 00:22:30] Current status: RUNNING
+[2025-04-27 00:23:00] Current status: RUNNING
+[2025-04-27 00:23:31] Current status: RUNNING
+[2025-04-27 00:24:01] Current status: RUNNING
+[2025-04-27 00:24:32] Current status: RUNNING
+[2025-04-27 00:25:02] Current status: RUNNING
+[2025-04-27 00:25:33] Current status: RUNNING
+[2025-04-27 00:26:03] Current status: RUNNING
+[2025-04-27 00:26:33] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-27 00:26:33
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 14
+TOTAL EXECUTION TIME: 0h 15m 15s
+===========================================
+
+Top 3 Airlines with Highest On-Time Probability:
+Airline: AQ      | On-Time Probability: 0.8933996133664733
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: ML (1)  | On-Time Probability: 0.8412528868360277
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: WN      | On-Time Probability: 0.75309616534385
+Airline: UA      | On-Time Probability: 0.771141274332857
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:HNL-OAK        76.1
+MIN_PAIR:HNL-GUM        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:JFK       29.895967
+TOP_LONGEST:2:ACK       29.611137
+TOP_LONGEST:3:EWR       28.372032
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:MKK      0.0
+TOP_SHORTEST:2:LNY      0.0
+TOP_SHORTEST:3:ABI      6.0
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 2000      187490
+===========================================
+JOB STARTED AT: 2025-04-27 00:32:41
+NUM_YEARS: 15
+===========================================
+
+Job submission response: job: 0000014-250426225021547-oozie-ubun-W
+Job ID: 0000014-250426225021547-oozie-ubun-W
+
+[2025-04-27 00:32:42] Current status: RUNNING
+[2025-04-27 00:33:13] Current status: RUNNING
+[2025-04-27 00:33:43] Current status: RUNNING
+[2025-04-27 00:34:14] Current status: RUNNING
+[2025-04-27 00:34:44] Current status: RUNNING
+[2025-04-27 00:35:15] Current status: RUNNING
+[2025-04-27 00:35:46] Current status: RUNNING
+[2025-04-27 00:36:16] Current status: RUNNING
+[2025-04-27 00:36:47] Current status: RUNNING
+[2025-04-27 00:37:17] Current status: RUNNING
+[2025-04-27 00:37:47] Current status: RUNNING
+[2025-04-27 00:38:18] Current status: RUNNING
+[2025-04-27 00:38:48] Current status: RUNNING
+[2025-04-27 00:39:19] Current status: RUNNING
+[2025-04-27 00:39:50] Current status: RUNNING
+[2025-04-27 00:40:20] Current status: RUNNING
+[2025-04-27 00:40:51] Current status: RUNNING
+[2025-04-27 00:41:21] Current status: RUNNING
+[2025-04-27 00:41:52] Current status: RUNNING
+[2025-04-27 00:42:22] Current status: RUNNING
+[2025-04-27 00:42:53] Current status: RUNNING
+[2025-04-27 00:43:23] Current status: RUNNING
+[2025-04-27 00:43:54] Current status: RUNNING
+[2025-04-27 00:44:24] Current status: RUNNING
+[2025-04-27 00:44:54] Current status: RUNNING
+[2025-04-27 00:45:25] Current status: RUNNING
+[2025-04-27 00:45:55] Current status: RUNNING
+[2025-04-27 00:46:26] Current status: RUNNING
+[2025-04-27 00:46:56] Current status: RUNNING
+[2025-04-27 00:47:27] Current status: RUNNING
+[2025-04-27 00:47:57] Current status: RUNNING
+[2025-04-27 00:48:28] Current status: RUNNING
+[2025-04-27 00:48:58] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-27 00:48:58
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 15
+TOTAL EXECUTION TIME: 0h 16m 17s
+===========================================
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: ML (1)  | On-Time Probability: 0.8412528868360277
+Airline: AQ      | On-Time Probability: 0.8381086557335529
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: MQ      | On-Time Probability: 0.7407650494674431
+Airline: WN      | On-Time Probability: 0.7532168749649888
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:EWR-ANC        58.02381
+MIN_PAIR:DAB-MLB        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:ACK       29.611137
+TOP_LONGEST:2:JFK       29.48529
+TOP_LONGEST:3:EWR       28.390162
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:MKK      0.0
+TOP_SHORTEST:2:LNY      0.0
+TOP_SHORTEST:3:KSM      8.373096
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 2001      231198
+
+===========================================
+JOB STARTED AT: 2025-04-27 00:55:02
+NUM_YEARS: 16
+===========================================
+
+Job submission response: job: 0000018-250426225021547-oozie-ubun-W
+Job ID: 0000018-250426225021547-oozie-ubun-W
+
+[2025-04-27 00:55:03] Current status: RUNNING
+[2025-04-27 00:55:33] Current status: RUNNING
+[2025-04-27 00:56:04] Current status: RUNNING
+[2025-04-27 00:56:34] Current status: RUNNING
+[2025-04-27 00:57:05] Current status: RUNNING
+[2025-04-27 00:57:35] Current status: RUNNING
+[2025-04-27 00:58:06] Current status: RUNNING
+[2025-04-27 00:58:36] Current status: RUNNING
+[2025-04-27 00:59:07] Current status: RUNNING
+[2025-04-27 00:59:38] Current status: RUNNING
+[2025-04-27 01:00:08] Current status: RUNNING
+[2025-04-27 01:00:38] Current status: RUNNING
+[2025-04-27 01:01:09] Current status: RUNNING
+[2025-04-27 01:01:39] Current status: RUNNING
+[2025-04-27 01:02:10] Current status: RUNNING
+[2025-04-27 01:02:40] Current status: RUNNING
+[2025-04-27 01:03:11] Current status: RUNNING
+[2025-04-27 01:03:41] Current status: RUNNING
+[2025-04-27 01:04:12] Current status: RUNNING
+[2025-04-27 01:04:42] Current status: RUNNING
+[2025-04-27 01:05:13] Current status: RUNNING
+[2025-04-27 01:05:44] Current status: RUNNING
+[2025-04-27 01:06:14] Current status: RUNNING
+[2025-04-27 01:06:45] Current status: RUNNING
+[2025-04-27 01:07:15] Current status: RUNNING
+[2025-04-27 01:07:45] Current status: RUNNING
+[2025-04-27 01:08:16] Current status: RUNNING
+[2025-04-27 01:08:47] Current status: RUNNING
+[2025-04-27 01:09:17] Current status: RUNNING
+[2025-04-27 01:09:48] Current status: RUNNING
+[2025-04-27 01:10:18] Current status: RUNNING
+[2025-04-27 01:10:49] Current status: RUNNING
+[2025-04-27 01:11:19] Current status: RUNNING
+[2025-04-27 01:11:50] Current status: RUNNING
+[2025-04-27 01:12:20] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-27 01:12:20
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 16
+TOTAL EXECUTION TIME: 0h 17m 18s
+===========================================
+
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:
+Airline: PA (1)  | On-Time Probability: 0.8507353364508102
+Airline: ML (1)  | On-Time Probability: 0.8412528868360277
+Airline: AQ      | On-Time Probability: 0.8381086557335529
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: WN      | On-Time Probability: 0.7509252135491747
+Airline: MQ      | On-Time Probability: 0.7726926625232767
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:SBP-SBA        948.0
+MIN_PAIR:AGS-CHS        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:ACY       186.5
+TOP_LONGEST:2:ACK       29.611137
+TOP_LONGEST:3:JFK       29.320107
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:MKK      0.0
+TOP_SHORTEST:2:LNY      0.0
+TOP_SHORTEST:3:KSM      8.373096
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 2001      231198
+
+===========================================
+JOB STARTED AT: 2025-04-27 01:21:14
+NUM_YEARS: 17
+===========================================
+
+Job submission response: job: 0000022-250426225021547-oozie-ubun-W
+Job ID: 0000022-250426225021547-oozie-ubun-W
+
+[2025-04-27 01:21:15] Current status: RUNNING
+[2025-04-27 01:21:45] Current status: RUNNING
+[2025-04-27 01:22:16] Current status: RUNNING
+[2025-04-27 01:22:46] Current status: RUNNING
+[2025-04-27 01:23:17] Current status: RUNNING
+[2025-04-27 01:23:47] Current status: RUNNING
+[2025-04-27 01:24:18] Current status: RUNNING
+[2025-04-27 01:24:49] Current status: RUNNING
+[2025-04-27 01:25:19] Current status: RUNNING
+[2025-04-27 01:25:50] Current status: RUNNING
+[2025-04-27 01:26:20] Current status: RUNNING
+[2025-04-27 01:26:51] Current status: RUNNING
+[2025-04-27 01:27:21] Current status: RUNNING
+[2025-04-27 01:27:51] Current status: RUNNING
+[2025-04-27 01:28:22] Current status: RUNNING
+[2025-04-27 01:28:52] Current status: RUNNING
+[2025-04-27 01:29:23] Current status: RUNNING
+[2025-04-27 01:29:53] Current status: RUNNING
+[2025-04-27 01:30:25] Current status: RUNNING
+[2025-04-27 01:30:57] Current status: RUNNING
+[2025-04-27 01:31:28] Current status: RUNNING
+[2025-04-27 01:32:00] Current status: RUNNING
+[2025-04-27 01:32:31] Current status: RUNNING
+[2025-04-27 01:33:03] Current status: RUNNING
+[2025-04-27 01:33:35] Current status: RUNNING
+[2025-04-27 01:34:06] Current status: RUNNING
+[2025-04-27 01:34:38] Current status: RUNNING
+[2025-04-27 01:35:10] Current status: RUNNING
+[2025-04-27 01:35:41] Current status: RUNNING
+[2025-04-27 01:36:13] Current status: RUNNING
+[2025-04-27 01:36:45] Current status: RUNNING
+[2025-04-27 01:37:16] Current status: RUNNING
+[2025-04-27 01:37:48] Current status: RUNNING
+[2025-04-27 01:38:20] Current status: RUNNING
+[2025-04-27 01:38:51] Current status: RUNNING
+[2025-04-27 01:39:23] Current status: RUNNING
+[2025-04-27 01:39:54] Current status: RUNNING
+[2025-04-27 01:40:26] Current status: RUNNING
+[2025-04-27 01:40:57] Current status: RUNNING
+[2025-04-27 01:41:29] Current status: RUNNING
+[2025-04-27 01:42:00] Current status: RUNNING
+[2025-04-27 01:42:32] Current status: RUNNING
+[2025-04-27 01:43:04] Current status: RUNNING
+[2025-04-27 01:43:36] Current status: RUNNING
+[2025-04-27 01:44:08] Current status: RUNNING
+[2025-04-27 01:44:40] Current status: RUNNING
+[2025-04-27 01:45:10] Current status: RUNNING
+[2025-04-27 01:45:41] Current status: RUNNING
+[2025-04-27 01:46:12] Current status: RUNNING
+[2025-04-27 01:46:43] Current status: RUNNING
+[2025-04-27 01:47:15] Current status: RUNNING
+[2025-04-27 01:47:46] Current status: RUNNING
+[2025-04-27 01:48:18] Current status: RUNNING
+[2025-04-27 01:48:49] Current status: RUNNING
+[2025-04-27 01:49:21] Current status: RUNNING
+[2025-04-27 01:49:52] Current status: RUNNING
+[2025-04-27 01:50:24] Current status: RUNNING
+[2025-04-27 01:50:55] Current status: RUNNING
+[2025-04-27 01:51:27] Current status: RUNNING
+[2025-04-27 01:51:58] Current status: RUNNING
+[2025-04-27 01:52:30] Current status: RUNNING
+[2025-04-27 01:53:02] Current status: RUNNING
+[2025-04-27 01:53:33] Current status: RUNNING
+[2025-04-27 01:54:05] Current status: RUNNING
+[2025-04-27 01:54:36] Current status: RUNNING
+[2025-04-27 01:55:08] Current status: RUNNING
+[2025-04-27 01:55:40] Current status: RUNNING
+[2025-04-27 01:56:11] Current status: RUNNING
+[2025-04-27 01:56:43] Current status: RUNNING
+[2025-04-27 01:57:15] Current status: RUNNING
+[2025-04-27 01:57:46] Current status: RUNNING
+[2025-04-27 01:58:19] Current status: RUNNING
+[2025-04-27 01:58:50] Current status: RUNNING
+[2025-04-27 01:59:21] Current status: RUNNING
+[2025-04-27 01:59:51] Current status: SUCCEEDED
+
+===========================================
+JOB COMPLETED AT: 2025-04-27 01:59:51
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 17
+TOTAL EXECUTION TIME: 0h 38m 37s
+===========================================
+
+Top 3 Airlines with Highest On-Time Probability:
+Airline: HA      | On-Time Probability: 0.909802412111881
+Airline: OO      | On-Time Probability: 0.8734870612349475
+Airline: XE      | On-Time Probability: 0.861761354286016
+
+Bottom 3 Airlines with Lowest On-Time Probability:
+Airline: PI      | On-Time Probability: 0.7372373986615756
+Airline: EV      | On-Time Probability: 0.7509833200477533
+Airline: WN      | On-Time Probability: 0.7563957018847629
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:PHF-RDU        1462.0
+MIN_PAIR:AGS-CHS        0.0
+TOP_LONGEST:    0.0
+TOP_LONGEST:1:VLD       33.686024
+TOP_LONGEST:2:PHF       32.16384
+TOP_LONGEST:3:BQK       31.477753
+TOP_SHORTEST:   0.0
+TOP_SHORTEST:1:MKK      7.5544686
+TOP_SHORTEST:2:BFF      8.0
+TOP_SHORTEST:3:KSM      8.373096
+ubuntu@ip-172-31-43-49:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 2001      231198
+
+
+ANDY VERSION 1.0
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ cat two.txt
+===========================================
+JOB STARTED AT: 2025-04-27 04:31:01
+NUM_YEARS: 18
+===========================================
+Job submission response: job: 0000000-250427042451472-oozie-ubun-W
+Job ID: 0000000-250427042451472-oozie-ubun-W
+[2025-04-27 04:31:04] Current status: RUNNING
+[2025-04-27 04:31:34] Current status: RUNNING
+[2025-04-27 04:32:05] Current status: RUNNING
+[2025-04-27 04:32:35] Current status: RUNNING
+[2025-04-27 04:33:06] Current status: RUNNING
+[2025-04-27 04:33:36] Current status: RUNNING
+[2025-04-27 04:34:07] Current status: RUNNING
+[2025-04-27 04:34:37] Current status: RUNNING
+[2025-04-27 04:35:08] Current status: RUNNING
+[2025-04-27 04:35:39] Current status: RUNNING
+[2025-04-27 04:36:09] Current status: RUNNING
+[2025-04-27 04:36:39] Current status: RUNNING
+[2025-04-27 04:37:10] Current status: RUNNING
+[2025-04-27 04:37:40] Current status: RUNNING
+[2025-04-27 04:38:11] Current status: RUNNING
+[2025-04-27 04:38:41] Current status: SUCCEEDED
+===========================================
+JOB COMPLETED AT: 2025-04-27 04:38:41
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 18
+TOTAL EXECUTION TIME: 0h 7m 40s
+===========================================
+Top 3 Airlines with Highest On-Time Probability:	
+Airline: HA	 | On-Time Probability: 0.9317704500170529
+Airline: PA (1)	 | On-Time Probability: 0.8507353364508102
+Airline: XE	 | On-Time Probability: 0.8498008510090557
+Bottom 3 Airlines with Lowest On-Time Probability:	
+Airline: PI	 | On-Time Probability: 0.7372373986615756
+Airline: EV	 | On-Time Probability: 0.7471264154376948
+Airline: WN	 | On-Time Probability: 0.7534916747841781
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA	1468.0
+MIN_PAIR:ALB-BTV	0.0
+TOP_LONGEST:	0.0
+TOP_LONGEST:1:CKB	359.25
+TOP_LONGEST:2:LNY	52.27336
+TOP_LONGEST:3:MKK	49.921803
+TOP_SHORTEST:	0.0
+TOP_SHORTEST:1:BFF	8.0
+TOP_SHORTEST:2:KSM	8.373096
+TOP_SHORTEST:3:DUT	8.767158
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 2001	231198
+===========================================
+JOB STARTED AT: 2025-04-27 04:42:19
+NUM_YEARS: 19
+===========================================
+Job submission response: job: 0000004-250427042451472-oozie-ubun-W
+Job ID: 0000004-250427042451472-oozie-ubun-W
+[2025-04-27 04:42:20] Current status: RUNNING
+[2025-04-27 04:42:51] Current status: RUNNING
+[2025-04-27 04:43:21] Current status: RUNNING
+[2025-04-27 04:43:52] Current status: RUNNING
+[2025-04-27 04:44:22] Current status: RUNNING
+[2025-04-27 04:44:53] Current status: RUNNING
+[2025-04-27 04:45:23] Current status: RUNNING
+[2025-04-27 04:45:54] Current status: RUNNING
+[2025-04-27 04:46:25] Current status: RUNNING
+[2025-04-27 04:46:55] Current status: RUNNING
+[2025-04-27 04:47:25] Current status: RUNNING
+[2025-04-27 04:47:56] Current status: RUNNING
+[2025-04-27 04:48:26] Current status: RUNNING
+[2025-04-27 04:48:56] Current status: RUNNING
+[2025-04-27 04:49:27] Current status: RUNNING
+[2025-04-27 04:49:57] Current status: RUNNING
+[2025-04-27 04:50:28] Current status: SUCCEEDED
+===========================================
+JOB COMPLETED AT: 2025-04-27 04:50:28
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 19
+TOTAL EXECUTION TIME: 0h 8m 9s
+===========================================
+Top 3 Airlines with Highest On-Time Probability:	
+Airline: HA	 | On-Time Probability: 0.9416314304152259
+Airline: PA (1)	 | On-Time Probability: 0.8507353364508102
+Airline: ML (1)	 | On-Time Probability: 0.8412528868360277
+Bottom 3 Airlines with Lowest On-Time Probability:	
+Airline: EV	 | On-Time Probability: 0.7331445736205086
+Airline: PI	 | On-Time Probability: 0.7372373986615756
+Airline: FL	 | On-Time Probability: 0.7405245934652369
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA	1468.0
+MIN_PAIR:ABI-SJT	0.0
+TOP_LONGEST:	0.0
+TOP_LONGEST:1:CKB	324.7857
+TOP_LONGEST:2:LNY	52.27336
+TOP_LONGEST:3:MKK	49.921803
+TOP_SHORTEST:	0.0
+TOP_SHORTEST:1:BFF	8.0
+TOP_SHORTEST:2:LAR	8.0
+TOP_SHORTEST:3:KSM	8.373096
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 2001	231198
+===========================================
+JOB STARTED AT: 2025-04-27 04:53:18
+NUM_YEARS: 20
+===========================================
+Job submission response: job: 0000008-250427042451472-oozie-ubun-W
+Job ID: 0000008-250427042451472-oozie-ubun-W
+[2025-04-27 04:53:19] Current status: RUNNING
+[2025-04-27 04:53:50] Current status: RUNNING
+[2025-04-27 04:54:20] Current status: RUNNING
+[2025-04-27 04:54:50] Current status: RUNNING
+[2025-04-27 04:55:21] Current status: RUNNING
+[2025-04-27 04:55:51] Current status: RUNNING
+[2025-04-27 04:56:21] Current status: RUNNING
+[2025-04-27 04:56:52] Current status: RUNNING
+[2025-04-27 04:57:23] Current status: RUNNING
+[2025-04-27 04:57:53] Current status: RUNNING
+[2025-04-27 04:58:24] Current status: RUNNING
+[2025-04-27 04:58:54] Current status: RUNNING
+[2025-04-27 04:59:24] Current status: RUNNING
+[2025-04-27 04:59:54] Current status: RUNNING
+[2025-04-27 05:00:25] Current status: RUNNING
+[2025-04-27 05:00:55] Current status: RUNNING
+[2025-04-27 05:01:26] Current status: RUNNING
+[2025-04-27 05:01:56] Current status: SUCCEEDED
+===========================================
+JOB COMPLETED AT: 2025-04-27 05:01:56
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 20
+TOTAL EXECUTION TIME: 0h 8m 38s
+===========================================
+Top 3 Airlines with Highest On-Time Probability:	
+Airline: HA	 | On-Time Probability: 0.9438626455121578
+Airline: AQ	 | On-Time Probability: 0.8579037765555033
+Airline: PA (1)	 | On-Time Probability: 0.8507353364508102
+Bottom 3 Airlines with Lowest On-Time Probability:	
+Airline: EV	 | On-Time Probability: 0.7105426725920084
+Airline: YV	 | On-Time Probability: 0.7338696565273356
+Airline: FL	 | On-Time Probability: 0.7365594261203722
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA	1468.0
+MIN_PAIR:ABI-SJT	0.0
+TOP_LONGEST:	0.0
+TOP_LONGEST:1:CKB	299.375
+TOP_LONGEST:2:LNY	52.27336
+TOP_LONGEST:3:MKK	49.921803
+TOP_SHORTEST:	0.0
+TOP_SHORTEST:1:BFF	8.0
+TOP_SHORTEST:2:LAR	8.0
+TOP_SHORTEST:3:KSM	8.373096
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+No valid cancellation reason for year 2001	231198
+===========================================
+JOB STARTED AT: 2025-04-27 05:04:18
+NUM_YEARS: 21
+===========================================
+Job submission response: job: 0000012-250427042451472-oozie-ubun-W
+Job ID: 0000012-250427042451472-oozie-ubun-W
+[2025-04-27 05:04:19] Current status: RUNNING
+[2025-04-27 05:04:50] Current status: RUNNING
+[2025-04-27 05:05:20] Current status: RUNNING
+[2025-04-27 05:05:51] Current status: RUNNING
+[2025-04-27 05:06:21] Current status: RUNNING
+[2025-04-27 05:06:51] Current status: RUNNING
+[2025-04-27 05:07:22] Current status: RUNNING
+[2025-04-27 05:07:53] Current status: RUNNING
+[2025-04-27 05:08:23] Current status: RUNNING
+[2025-04-27 05:08:54] Current status: RUNNING
+[2025-04-27 05:09:24] Current status: RUNNING
+[2025-04-27 05:09:54] Current status: RUNNING
+[2025-04-27 05:10:25] Current status: RUNNING
+[2025-04-27 05:10:55] Current status: RUNNING
+[2025-04-27 05:11:26] Current status: RUNNING
+[2025-04-27 05:11:56] Current status: RUNNING
+[2025-04-27 05:12:26] Current status: RUNNING
+[2025-04-27 05:12:56] Current status: RUNNING
+[2025-04-27 05:13:27] Current status: RUNNING
+[2025-04-27 05:13:57] Current status: RUNNING
+[2025-04-27 05:14:28] Current status: RUNNING
+[2025-04-27 05:14:58] Current status: RUNNING
+[2025-04-27 05:15:29] Current status: SUCCEEDED
+===========================================
+JOB COMPLETED AT: 2025-04-27 05:15:29
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 21
+TOTAL EXECUTION TIME: 0h 11m 11s
+===========================================
+Top 3 Airlines with Highest On-Time Probability:	
+Airline: HA	 | On-Time Probability: 0.9448318216175359
+Airline: AQ	 | On-Time Probability: 0.8700707996606067
+Airline: PA (1)	 | On-Time Probability: 0.8507353364508102
+Bottom 3 Airlines with Lowest On-Time Probability:	
+Airline: EV	 | On-Time Probability: 0.6905882018752363
+Airline: PI	 | On-Time Probability: 0.7372373986615756
+Airline: YV	 | On-Time Probability: 0.7388927796366906
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA	1468.0
+MIN_PAIR:ABI-SJT	0.0
+TOP_LONGEST:	0.0
+TOP_LONGEST:1:CKB	299.375
+TOP_LONGEST:2:LNY	52.27336
+TOP_LONGEST:3:MKK	49.921803
+TOP_SHORTEST:	0.0
+TOP_SHORTEST:1:LAR	8.0
+TOP_SHORTEST:2:KSM	8.373096
+TOP_SHORTEST:3:BFF	8.5
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A	263538
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ 
+===========================================
+JOB STARTED AT: 2025-04-27 05:18:07
+NUM_YEARS: 22
+===========================================
+Job submission response: job: 0000016-250427042451472-oozie-ubun-W
+Job ID: 0000016-250427042451472-oozie-ubun-W
+[2025-04-27 05:18:08] Current status: RUNNING
+[2025-04-27 05:18:38] Current status: RUNNING
+[2025-04-27 05:19:09] Current status: RUNNING
+[2025-04-27 05:19:39] Current status: RUNNING
+[2025-04-27 05:20:09] Current status: RUNNING
+[2025-04-27 05:20:39] Current status: RUNNING
+[2025-04-27 05:21:10] Current status: RUNNING
+[2025-04-27 05:21:41] Current status: RUNNING
+[2025-04-27 05:22:11] Current status: RUNNING
+[2025-04-27 05:22:41] Current status: RUNNING
+[2025-04-27 05:23:11] Current status: RUNNING
+[2025-04-27 05:23:42] Current status: RUNNING
+[2025-04-27 05:24:12] Current status: RUNNING
+[2025-04-27 05:24:42] Current status: RUNNING
+[2025-04-27 05:25:13] Current status: RUNNING
+[2025-04-27 05:25:43] Current status: RUNNING
+[2025-04-27 05:26:13] Current status: RUNNING
+[2025-04-27 05:26:44] Current status: RUNNING
+[2025-04-27 05:27:14] Current status: RUNNING
+[2025-04-27 05:27:45] Current status: RUNNING
+[2025-04-27 05:28:15] Current status: RUNNING
+[2025-04-27 05:28:46] Current status: RUNNING
+[2025-04-27 05:29:16] Current status: RUNNING
+[2025-04-27 05:29:46] Current status: RUNNING
+[2025-04-27 05:30:17] Current status: RUNNING
+[2025-04-27 05:30:47] Current status: RUNNING
+[2025-04-27 05:31:17] Current status: RUNNING
+[2025-04-27 05:31:48] Current status: RUNNING
+[2025-04-27 05:32:19] Current status: RUNNING
+[2025-04-27 05:32:49] Current status: RUNNING
+[2025-04-27 05:33:19] Current status: SUCCEEDED
+===========================================
+JOB COMPLETED AT: 2025-04-27 05:33:19
+FINAL STATUS: SUCCEEDED
+NUM_YEARS: 22
+TOTAL EXECUTION TIME: 0h 15m 12s
+===========================================
+Top 3 Airlines with Highest On-Time Probability:	
+Airline: HA	 | On-Time Probability: 0.9446017229607789
+Airline: AQ	 | On-Time Probability: 0.8730533706382305
+Airline: PA (1)	 | On-Time Probability: 0.8507353364508102
+Bottom 3 Airlines with Lowest On-Time Probability:	
+Airline: EV	 | On-Time Probability: 0.6912508954301619
+Airline: PI	 | On-Time Probability: 0.7372373986615756
+Airline: YV	 | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj1/part-00000
+Top 3 Airlines with Highest On-Time Probability:	
+Airline: HA	 | On-Time Probability: 0.9446017229607789
+Airline: AQ	 | On-Time Probability: 0.8730533706382305
+Airline: PA (1)	 | On-Time Probability: 0.8507353364508102
+Bottom 3 Airlines with Lowest On-Time Probability:	
+Airline: EV	 | On-Time Probability: 0.6912508954301619
+Airline: PI	 | On-Time Probability: 0.7372373986615756
+Airline: YV	 | On-Time Probability: 0.7395037574127508
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj2/part-00000
+MAX_PAIR:ROA-BNA	1468.0
+MIN_PAIR:ABI-SJT	0.0
+TOP_LONGEST:	0.0
+TOP_LONGEST:1:CKB	299.375
+TOP_LONGEST:2:LNY	52.27336
+TOP_LONGEST:3:MKK	49.921803
+TOP_SHORTEST:	0.0
+TOP_SHORTEST:1:LAR	8.0
+TOP_SHORTEST:2:KSM	8.373096
+TOP_SHORTEST:3:BFF	8.5
+ubuntu@ip-172-31-46-7:~/oozie-4.1.0$ hdfs dfs -cat /user/ubuntu/outj3/part-00000
+A	289613
+
+
+
