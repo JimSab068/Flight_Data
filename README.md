@@ -1,2 +1,3 @@
 # Flight_Data
 Flight Data Analysis
+Designed and implemented a distributed data processing workflow using Hadoop and Apache Oozie to analyze over 20 years of U.S. flight data (~100M+ records). Developed and orchestrated multiple MapReduce jobs to identify top-performing airlines, analyze airport taxi times, and determine common flight cancellation reasons. Deployed the solution on AWS EC2 instances, performed scalability testing across varying VM counts, and benchmarked performance over incremental time spans. Demonstrated strong skills in big data processing, cluster configuration, and workflow automation.
